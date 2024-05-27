@@ -33,3 +33,4 @@ f = ( jf + af + pf)/3
 ff = round(f,3)
 
 print("la nota final de los tres promedios sumados es : ",ff)
+

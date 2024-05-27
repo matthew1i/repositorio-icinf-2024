@@ -46,9 +46,25 @@ ciudades = ["castro", "ancud", "quellon", "chonchi"]
 varios = ["nicolas", 20,True]
 print(type(ciudades))
 print(type(varios))
-list("python", "ruby")
+#Otra forma de inicializar listas
+lista2 = list("python", "ruby")
 print(ciudades)
+print(type(ciudades))
+#Cantidad de elementos de una lista
+print(len(ciudades))
+#Cuenta la cantidad de ocurrencias de una lista
+print(ciudades.count("castro"))
+#Impresion de elemento especifico en una lista
+print(ciudades[-3])
+listnum = [1,2,3,4,5,6,7,8,9,10]
+listnum2 = list(range(10))
+print(listnum2)
 
-
-
-
+#Tuplas
+musica = tuple()
+generos = ("rock", "blues", "pop") 
+print(generos)
+print(type(generos))
+print(generos[2])
+#Consulta la posicion de un elemento
+print(generos.index("pop"))
