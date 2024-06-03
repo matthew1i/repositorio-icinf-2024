@@ -83,12 +83,27 @@ print(animales)
 colores.add("celeste")
 print(colores)
 #diccionario
-paciente = {
-    nombre = "nelson" ,
-    edad = 30
-    ciudad = "castro"}
-doctor = dict{
-    "nombre" : "elson"
-    "edad" : 40,}
+paciente = dict(
+    nombre = "francisco" ,
+    edad = 30 ,
+    ciudad = "castro" )
+doctor = {
+    "nombre" : "elson",
+    "edad" : 40 ,
+    "especialidad" : "cirujano" }
 print(type(doctor))
 print(type(paciente))
+#eliminando la clave nombre del diccionario doctor
+doctor.pop("nombre")
+print("diccionario actualizado: ", doctor)
+print(paciente.keys())
+print(paciente.values())
+#consultar una clave en especifico
+print(paciente["nombre"])
+print(paciente["edad"])
+#actualizar diccionario
+paciente.update({
+    "ciudad" : "queilen"})
+print(paciente)
+paciente.clear()
+print(paciente)
