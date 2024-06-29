@@ -107,3 +107,17 @@ paciente.update({
 print(paciente)
 paciente.clear()
 print(paciente)
+#funcion se encargar de elementos iterables = todas las estructuras parecidas a las listas
+n = [1, 2, 3, 4, 5 ]
+n_str = list(map(str, n))
+print("lista de numeros como string", ', '.join(n_str))
+#filter se encarga de elementos de un iterable
+ramos = ["programacion", "taller", "matematicas", "fisica", "ingles"]
+long = list(filter(lambda x: len(x) > 7, ramos))
+print(long)
+#zip iterable
+a = [1, 2, 3, 4]
+b = ["a","b","c","d"]
+comprimir = list(zip(a, b))
+print(comprimir)
+list3 = list("la pagina web sera llamda juee porque es una palabra tipica de la localdida ")
